@@ -1,0 +1,285 @@
+main {
+  padding-left: 3%;
+  padding-right: 3%;
+  flex: 1;
+}
+
+.portraet {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  margin-left: 20%;
+  margin-top: -25%;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-image {
+  transition: transform 0.3s;
+}
+
+.hover-image:hover {
+  transform: scale(1.1);
+}
+
+.philiptai {
+  margin-left: 25%;
+  padding-bottom: 8%;
+  filter: drop-shadow(#ff00ff 5px 5px 5px);
+  margin-top: 20px;
+}
+
+.cvommig {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  margin-left: 0%;
+}
+
+.cv1 {
+  margin-left: 20px;
+}
+
+.iglogo {
+  display: block;
+  margin-left: 45%;
+  margin-right: auto;
+  width: 3%;
+}
+.logos {
+  display: flex;
+}
+.spotifylogo {
+  display: block;
+  margin-left: auto;
+  margin-right: 45%;
+  width: 3%;
+}
+/*ALT DESKTOP KUN HUSK DOBBELT OVENFOR OGSÅ*/
+@media (min-width: 800px) {
+  .portraet {
+    display: block;
+    margin-left: 483px;
+    height: auto;
+    width: 45%;
+    margin-top: -269px;
+    z-index: 0;
+    position: relative;
+  }
+  .borderright {
+    border-right: #ff00ff 1px solid;
+    padding-left: 12%;
+    padding-right: 12%;
+    height: 80%;
+  }
+  .borderleft {
+    padding-left: 12%;
+    padding-right: 12%;
+    height: 500px;
+  }
+
+  .philiptai {
+    margin-left: 45%;
+    padding-bottom: 4%;
+  }
+
+  .website_index {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .website_01 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    border-inline: #ff00ff 1px solid;
+    padding: 30px;
+  }
+
+  .website_02 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    border-inline: #ff00ff 1px solid;
+    padding: 30px;
+  }
+
+  .website_03 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    border-inline: #ff00ff 1px solid;
+    padding: 30px;
+  }
+
+  .website_04 {
+    gap: 20px;
+    border-inline: #ff00ff 1px solid;
+    padding: 30px;
+  }
+
+  .website_04 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: min-content;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .div1-4 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .div2-4 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .div3-4 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  .div4-4 {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+  .div5-4 {
+    grid-area: 5 / 1 / 6 / 2;
+  }
+  .div6-4 {
+    grid-area: 6 / 1 / 7 / 2;
+  }
+  .div7-4 {
+    grid-area: 7 / 1 / 8 / 2;
+  }
+  .div8-4 {
+    grid-area: 2 / 2 / 4 / 3;
+  }
+  .div9-4 {
+    grid-area: 4 / 2 / 6 / 3;
+  }
+  .div10-4 {
+    grid-area: 6 / 2 / 8 / 3;
+  }
+  .website_05 {
+    gap: 20px;
+    border-inline: #ff00ff 1px solid;
+    padding: 0px;
+  }
+
+  .website_05 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: min-content;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 30px;
+  }
+
+  .div1 {
+    grid-area: 1 / 1 / 3 / 2;
+  }
+  .div2 {
+    grid-area: 3 / 1 / 5 / 2;
+  }
+  .div3 {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .div4 {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .div5 {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+  .div6 {
+    grid-area: 4 / 2 / 5 / 3;
+  }
+  .div7 {
+    grid-area: 5 / 2 / 6 / 3;
+  }
+  .div8 {
+    grid-area: 5 / 1 / 6 / 2;
+  }
+  .website_06 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    border-inline: #ff00ff 1px solid;
+    padding: 30px;
+  }
+  .cvommig {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .emnesiteforside {
+    margin-top: 150px;
+  }
+
+  .cv1 {
+    margin-left: -13px;
+  }
+
+  .website_01 h1,
+  h2,
+  p {
+    margin: 20px;
+  }
+
+  .website_01 img {
+    margin-bottom: 5px;
+  }
+
+  .website_02 h1,
+  h2,
+  p {
+    margin: 20px;
+  }
+
+  .website_02 img {
+    margin-bottom: 5px;
+  }
+
+  .website_03 h1,
+  h2,
+  p {
+    margin: 20px;
+  }
+
+  .website_03 img {
+    margin-bottom: 5px;
+  }
+
+  .website_04 h1,
+  h2,
+  p {
+    margin: 20px;
+  }
+
+  .website_04 img {
+    margin-bottom: 5px;
+  }
+
+  .website_05 h1,
+  h2,
+  p {
+    margin: 20px;
+  }
+
+  .website_05 img {
+    margin-bottom: 5px;
+  }
+
+  .website_06 h1,
+  h2,
+  p {
+    margin: 20px;
+  }
+
+  .website_06 img {
+    margin-bottom: 5px;
+  }
+
+  .portraet {
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* header */
+.banner {
+  padding: 2rem;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px 40px;
+  z-index: 1;
+  position: relative;
+}
+/* Menu styling*/
+.main-menu {
+  font-weight: 600;
+  animation: neonAnim 0.9s alternate-reverse infinite;
+  color: white;
+  font-size: 22px;
+}
+@keyframes neonAnim {
+  from {
+    text-shadow: 0 0 1px rgba(255, 0, 255, 0.7), 0 0 2px rgba(255, 0, 255, 0.7), 0 0 5px rgba(255, 0, 255, 0.7);
+  }
+  to {
+    text-shadow: 0 0 2px rgba(255, 0, 255, 0.7), 0 0 10px rgba(255, 0, 255, 0.7), 0 0 20px rgba(255, 0, 255, 0.7);
+  }
+}
+
+.main-menu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+/* burgermenu */
+.toggle-btn {
+  color: white;
+  background: transparent;
+  border: none;
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: none;
+  position: relative;
+  z-index: 2;
+  animation: neonAnim 0.9s alternate-reverse infinite;
+}
+
+@media (max-width: 600px) {
+  .toggle-btn {
+    display: block;
+  }
+
+  .main-menu.shown {
+    display: contents;
+  }
+
+  .main-menu ul {
+    display: none;
+  }
+
+  .main-menu.shown ul {
+    border-top: 1px solid #1d1d20;
+    padding-top: 1rem;
+    display: flex;
+    flex-flow: column;
+    flex-basis: 100%;
+    animation: neonAnim 0.9s alternate-reverse infinite;
+  }
+  @keyframes neonAnim {
+    from {
+      text-shadow: 0 0 1px rgba(255, 0, 255, 0.7), 0 0 2px rgba(255, 0, 255, 0.7), 0 0 5px rgba(255, 0, 255, 0.7);
+    }
+    to {
+      text-shadow: 0 0 2px rgba(255, 0, 255, 0.7), 0 0 10px rgba(255, 0, 255, 0.7), 0 0 20px rgba(255, 0, 255, 0.7);
+    }
+  }
+  .iglogo {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 12%;
+    justify-content: center;
+  }
+  .spotifylogo {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 12%;
+    justify-content: center;
+  }
+}
+
+/*Generel kodning til baggrund*/
+body {
+  background-color: #1d1d20;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Billede styling*/
+img {
+  height: auto;
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.logo {
+  max-width: 130px;
+  height: auto;
+}
+
+/*Skrift i hovedmenu*/
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/*Skrift til overskrifter*/
+h1 {
+  color: white;
+  font-style: normal;
+  display: block;
+}
+
+/*Skrift til <p>*/
+p,
+li {
+  color: white;
+  font-style: normal;
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/*Index om mig og cv*/
+.ommig {
+  color: white;
+  font-style: italic;
+  filter: drop-shadow(#ff00ff 5px 5px 5px);
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.cv {
+  color: white;
+  font-style: italic;
+  filter: drop-shadow(#ff00ff 5px 5px 5px);
+  margin-bottom: 20px;
+}
+
+footer {
+  color: white;
+  font-style: normal;
+  text-align: center;
+}
+
+.philiptaiwesenbergfooter {
+  text-align: center;
+}
+
+.horizontal-line {
+  border-top: 0.5px solid #ff00ff;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
