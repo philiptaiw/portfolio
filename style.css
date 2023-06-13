@@ -56,7 +56,21 @@
   .toggle-btn {
     display: block;
   }
+  /* youtube skalering til mobile */
+  .iframe-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+  }
 
+  .iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
   .main-menu.shown {
     display: contents;
   }
@@ -94,6 +108,84 @@
     margin-right: auto;
     width: 12%;
     justify-content: center;
+  }
+
+  .custom-btn {
+    color: #fff;
+    width: 130px;
+    height: 40px;
+    padding: 10px 25px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+  }
+
+  .btn-7 {
+    color: #ffffff;
+    line-height: 40px;
+    padding: 0;
+    border: none;
+    margin-left: 5px !important;
+    margin-bottom: 10px !important;
+  }
+  .btn-7 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-7:before,
+  .btn-7:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: #ff00ff;
+    box-shadow: 0 0 5px #ff00ff;
+    transition: all 0.3s ease;
+  }
+  .btn-7:before {
+    height: 50%;
+    width: 2px;
+  }
+  .btn-7:after {
+    width: 20%;
+    height: 2px;
+  }
+  .btn-7:hover:before {
+    height: 100%;
+  }
+  .btn-7:hover:after {
+    width: 100%;
+  }
+  .btn-7 span:before,
+  .btn-7 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: #ff00ff;
+    box-shadow: 0 0 5px #ff00ff;
+    transition: all 0.3s ease;
+  }
+  .btn-7 span:before {
+    width: 2px;
+    height: 50%;
+  }
+  .btn-7 span:after {
+    height: 2px;
+    width: 20%;
+  }
+  .btn-7 span:hover:before {
+    height: 100%;
+  }
+  .btn-7 span:hover:after {
+    width: 100%;
   }
 }
 
@@ -147,7 +239,7 @@ li {
 .ommig {
   color: white;
   font-style: italic;
-  filter: drop-shadow(#ff00ff 5px 5px 5px);
+  filter: drop-shadow(5px 5px 5px #ff00ff);
   margin-bottom: 20px;
   margin-top: 20px;
 }
@@ -155,7 +247,7 @@ li {
 .cv {
   color: white;
   font-style: italic;
-  filter: drop-shadow(#ff00ff 5px 5px 5px);
+  filter: drop-shadow(5px 5px 5px #ff00ff);
   margin-bottom: 20px;
 }
 
@@ -175,4 +267,90 @@ footer {
   margin-right: 60px;
   margin-bottom: 20px;
   margin-top: 20px;
+}
+.custom-btn {
+  color: #fff;
+  width: 130px;
+  height: 40px;
+  padding: 20px 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  font-size: 12px;
+}
+
+/* 7 */
+.btn-7 {
+  color: #ffffff;
+  line-height: 40px;
+  padding: 0;
+  border: none;
+  margin-left: 20px;
+}
+.btn-7 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-7:before,
+.btn-7:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #ff00ff;
+  box-shadow: 0 0 5px #ff00ff;
+  transition: all 0.3s ease;
+}
+.btn-7:before {
+  height: 50%;
+  width: 2px;
+}
+.btn-7:after {
+  width: 20%;
+  height: 2px;
+}
+.btn-7:hover:before {
+  height: 100%;
+}
+.btn-7:hover:after {
+  width: 100%;
+}
+.btn-7 span:before,
+.btn-7 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #ff00ff;
+  box-shadow: 0 0 5px #ff00ff;
+  transition: all 0.3s ease;
+}
+.btn-7 span:before {
+  width: 2px;
+  height: 50%;
+}
+.btn-7 span:after {
+  height: 2px;
+  width: 20%;
+}
+.btn-7 span:hover:before {
+  height: 100%;
+}
+.btn-7 span:hover:after {
+  width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+.mockupmobil {
+  height: auto;
+  width: 100%;
 }

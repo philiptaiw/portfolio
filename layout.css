@@ -28,8 +28,9 @@ main {
 .philiptai {
   margin-left: 25%;
   padding-bottom: 8%;
-  filter: drop-shadow(#ff00ff 5px 5px 5px);
   margin-top: 20px;
+  font-style: italic;
+  filter: drop-shadow(5px 5px 5px #ff00ff);
 }
 
 .cvommig {
